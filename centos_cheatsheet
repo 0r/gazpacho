@@ -1,0 +1,38 @@
+Centos cheatsheet
+
+FIND
+find /path -name filename
+
+SERVICES
+service <name> stop start
+chkconfig <name> off on
+systemctl start stop <name>
+
+USERS
+userdel
+useradd
+usermod
+
+GROUPS
+
+
+YUM
+yum list installed
+yum install <name1> <name2>
+yum erase <name>
+yum clean all
+yum update
+
+EXAMPLES
+Creating a new user
+  useradd -s /bin/bash -g beatles -m /home/ ringo 
+Adding existing user to group
+  usermod -a -G beatles george
+
+Check processes and services:
+ps -aux | grep process_name
+ps -eff | grep process_name
+netstat -tulpn
+systemctl | grep service_name
+systemctl list-unit-files (enabled or not, for chkconfig confirmation)
+cat /etc/services | grep portnumber 
