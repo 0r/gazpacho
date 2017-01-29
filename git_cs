@@ -1,19 +1,61 @@
 git config --global user.name "Noah"
 git config --global user.email "someone@someplace.com"
 
+GIT WORKFLOW
+Working Dir - Index - Head
+
 CREATE NEW REPO
 git clone https://github.com/0r/gazpacho.git
 cd gazpacho
 touch README.md
+# add changes to INDEX
 git add README.md
+# add changes to HEAD
 git commit -m "add README.md"
+# add changes to REMOTE
 git push -u origin master
 
 CREATE FROM EXISTING DIR OR REPO
 cd somedir
 git init
+# connect repo to remote 
 git remote add origin https://github.com/0r/somedir
+# push changes
 git add .
 git commit -m "inital"
 git push -u origin master
+
+BRANCHES
+#create branch somebranch
+git checkout -b somebranch
+# switch to master
+git checkout master
+# delete branch
+git branch -d feature_x
+# or push branch to remote
+git push origin somebranch
+
+UPDATE FROM REMOTE
+# fetch and merge remote latest to local
+git pull
+# merge a branch
+git merge <branch>
+# review conflict and readd manually then -
+git add <filename>
+git diff <source_branch> <target_branch> (preview diff before)
+
+TAGS
+git tag 1.0.0 (version) 1741975dd5 (commit ID, 1st 10)
+
+LOGS
+git log 
+
+REPLACING LOCAL
+# file
+git checkout -- <filename>
+# full repo
+git fetch origin
+git reset --hard origin/master
+
+
 
