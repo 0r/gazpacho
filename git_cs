@@ -1,5 +1,5 @@
-git config --global user.name "Noah Marchal"
-git config --global user.email "marchaln@missouri.edu"
+git config --global user.name "Noah"
+git config --global user.email "someone@someplace.com"
 
 CREATE NEW REPO
 git clone https://github.com/0r/gazpacho.git
