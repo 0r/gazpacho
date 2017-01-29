@@ -9,7 +9,7 @@ git add README.md
 git commit -m "add README.md"
 git push -u origin master
 
-CREATE FROM EXISTING DIR OR GIT REPO
+CREATE FROM EXISTING DIR OR REPO
 cd somedir
 git init
 git remote add origin https://github.com/0r/somedir
