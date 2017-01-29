@@ -8,6 +8,10 @@ service <name> stop start
 chkconfig <name> off on
 systemctl start stop <name>
 
+FIREWALL
+firewall-cmd --list-all
+
+
 USERS
 userdel
 useradd
