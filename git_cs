@@ -1,0 +1,19 @@
+git config --global user.name "Noah Marchal"
+git config --global user.email "marchaln@missouri.edu"
+
+CREATE NEW REPO
+git clone https://github.com/0r/gazpacho.git
+cd gazpacho
+touch README.md
+git add README.md
+git commit -m "add README.md"
+git push -u origin master
+
+CREATE FROM EXISTING DIR OR GIT REPO
+cd somedir
+git init
+git remote add origin https://github.com/0r/somedir
+git add .
+git commit -m "inital"
+git push -u origin master
+
