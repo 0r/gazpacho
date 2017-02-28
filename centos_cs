@@ -40,10 +40,13 @@ yum clean all
 yum update
 
 EXAMPLES
+Create new group
+groupadd <groupname>
+
 Creating a new user
   useradd -s /bin/bash -g beatles -m /home/ ringo 
 Adding existing user to group
-  usermod -a -G beatles george
+  usermod -a -G beatles ringo
 
 Check processes and services:
 ps -aux | grep process_name
