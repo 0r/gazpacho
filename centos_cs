@@ -1,5 +1,13 @@
 Centos cheatsheet
 
+DISK
+parted print (show partition table)
+create mount point
+add to /etc/fstab
+LABEL=/path	/path	[filesystem] defaults	1 2
+mount /path 
+
+
 FIND
 find /path -name filename
 
