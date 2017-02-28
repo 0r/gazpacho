@@ -10,7 +10,11 @@ systemctl start stop <name>
 
 FIREWALL
 firewall-cmd --list-all
+firewall-cmd -status
 
+(iptables-services is yum package for iptables)
+(/etc/sysconfig/iptables is location of iptables config)
+iptables -S (look at rules)
 
 USERS
 userdel
