@@ -36,7 +36,8 @@ Adding existing user to group
 Check processes and services:
 ps -aux | grep process_name
 ps -eff | grep process_name
-netstat -tulpn
+netstat -tulpn (check ports)
+nmap -sT -0 localhost (check ports)
 systemctl | grep service_name
 systemctl list-unit-files (enabled or not, for chkconfig confirmation)
 cat /etc/services | grep portnumber 
